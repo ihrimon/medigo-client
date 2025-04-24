@@ -1,0 +1,108 @@
+[
+  {
+    "name": "Zinacef Syrup",
+    "slug": "zinacef-syrup",
+    "description": "Cefuroxime antibiotic used to treat a wide range of bacterial infections.",
+    "images": [
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743926815/m-1_ujbzbc.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743926815/m-2_nqgcen.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743926814/m-5_b5iko8.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743926814/m-4_kfw9y7.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927237/m-3_x9dunz.png"
+    ],
+    "brand": "Square",
+    "category": "Antibiotic",
+    "price": 18.52,
+    "stock": 564,
+    "dosageForm": "Syrup",
+    "strength": ["250mg", "500mg"],
+    "prescriptionRequired": true,
+    "expiryDate": "19-08-2026",
+    "isActive": true
+  },
+  {
+    "name": "Ciprocin Tablet",
+    "slug": "ciprocin-tablet",
+    "description": "Ciprofloxacin antibiotic used to treat infections like UTIs, lower respiratory tract infections, etc.",
+    "images": [
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927235/17_p4j7sm.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927236/mmmmm-1_hjlcxg.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927235/14_ezsqll.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927235/15_h7bypt.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927237/mmm-1_qtrb3b.png"
+    ],
+    "brand": "Drug",
+    "category": "Antibiotic",
+    "price": 47.45,
+    "stock": 838,
+    "dosageForm": "Tablet",
+    "strength": ["250mg", "500mg"],
+    "prescriptionRequired": true,
+    "expiryDate": "19-08-2028",
+    "isActive": true
+  },
+  {
+    "name": "Suprax Tablet",
+    "slug": "suprax-tablet",
+    "description": "Cefixime antibiotic commonly used for bacterial infections such as pneumonia, bronchitis, etc.",
+    "images": [
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927237/mmm-1_qtrb3b.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927236/5_vjgfig.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927236/2_lsioaf.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927236/6_wtjvp1.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927235/mm-1_gryhdt.png"
+    ],
+    "brand": "Incepta",
+    "category": "Antibiotic",
+    "price": 21.11,
+    "stock": 162,
+    "dosageForm": "Tablet",
+    "strength": ["125mg/5ml", "500mg/5ml"],
+    "prescriptionRequired": true,
+    "expiryDate": "19-08-2027",
+    "isActive": true
+  },
+  {
+    "name": "Renamox Syrup",
+    "slug": "renamox-syrup",
+    "description": "Amoxicillin antibiotic used to treat bacterial infections like ear, nose, throat, urinary tract infections.",
+    "images": [
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927236/mmmm-4_iwf2jr.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927235/15_h7bypt.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927235/14_ezsqll.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927235/17_p4j7sm.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927236/mmmmm-1_hjlcxg.png"
+    ],
+    "brand": "Renata",
+    "category": "Antibiotic",
+    "price": 48.34,
+    "stock": 259,
+    "dosageForm": "Syrup",
+    "strength": ["125mg/5ml", "500mg/5ml"],
+    "prescriptionRequired": true,
+    "expiryDate": "19-08-2026",
+    "isActive": true
+  },
+
+  {
+    "name": "Azipro Capsule",
+    "slug": "azipro-capsule",
+    "description": "Azithromycin antibiotic used to treat various bacterial infections like respiratory infections.",
+    "images": [
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927235/mm-1_gryhdt.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927236/6_wtjvp1.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927236/2_lsioaf.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927237/mmm-1_qtrb3b.png",
+      "https://res.cloudinary.com/do6tvtff8/image/upload/v1743927236/5_vjgfig.png"
+    ],
+    "brand": "Beximco",
+    "category": "Antibiotic",
+    "price": 48.74,
+    "stock": 525,
+    "dosageForm": "Capsule",
+    "strength": ["250mg", "500mg"],
+    "prescriptionRequired": true,
+    "expiryDate": "19-08-2028",
+    "isActive": true
+  }
+]

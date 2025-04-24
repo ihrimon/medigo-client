@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Diabetes",
+    "slug": "diabetes",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742675965/diabetics_smlpch.png",
+    "icon": "https://res.cloudinary.com/do6tvtff8/image/upload/v1743828678/diabetics_fmtv8t.png",
+    "items": 31
+  },
+  {
+    "name": "Cold & Flu",
+    "slug": "gastrointestinal",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742675966/gastic_k7jwrx.png",
+    "icon": "https://res.cloudinary.com/do6tvtff8/image/upload/v1743828678/cold_pkeyob.png",
+    "items": 22
+  },
+  {
+    "name": "Skin Care",
+    "slug": "skin-care",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742675965/skin-care_fo2xwa.png",
+    "icon": "https://res.cloudinary.com/do6tvtff8/image/upload/v1743828678/skincare_jjncxp.png",
+    "items": 24
+  },
+  {
+    "name": "Ear & Nose",
+    "slug": "ear-nose",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742675966/ear_uklnd5.png",
+    "icon": "https://res.cloudinary.com/do6tvtff8/image/upload/v1743828678/eye_icwzlc.png",
+    "items": 15
+  },
+  {
+    "name": "Cancer Care",
+    "slug": "cancer-care",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742675967/cancer_raybag.png",
+    "icon": "https://res.cloudinary.com/do6tvtff8/image/upload/v1743828678/cancer_f02yp6.png",
+    "items": 12
+  },
+  {
+    "name": "Allergy Relief",
+    "slug": "allergy-relief",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742675966/gastic_k7jwrx.png",
+    "icon": "https://res.cloudinary.com/do6tvtff8/image/upload/v1743828678/allergy_zaw4mf.png",
+    "items": 17
+  },
+  {
+    "name": "Digestive",
+    "slug": "digestive",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742675966/gastic_k7jwrx.png",
+    "icon": "https://res.cloudinary.com/do6tvtff8/image/upload/v1743828678/digestive_bdj9pj.png",
+    "items": 18
+  },
+  {
+    "name": "Pain Relief",
+    "slug": "pain-relief",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742675966/pain-relief_szx4ge.png",
+    "icon": "https://res.cloudinary.com/do6tvtff8/image/upload/v1743828679/pain-relief_wu0v1b.png",
+    "items": 28
+  },
+  {
+    "name": "Vitamins",
+    "slug": "vitamins-supplements",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742675965/vitamine_f8qk8v.png",
+    "icon": "https://res.cloudinary.com/do6tvtff8/image/upload/v1743828678/vitamin_kwhm9i.png",
+    "items": 36
+  },
+  {
+    "name": "Antibiotics",
+    "slug": "antibiotics",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742675965/antibiotic_gh5yxt.png",
+    "icon": "https://res.cloudinary.com/do6tvtff8/image/upload/v1743828678/antibiotic_tl4ipi.png",
+    "items": 42
+  }
+]

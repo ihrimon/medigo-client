@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Square Pharma",
+    "slug": "square58",
+    "established": 1958,
+    "country": "Bangladesh",
+    "tagline": "Leading healthcare with trust",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742673461/square-image_pllcku.png",
+    "logo": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742672180/square_kbjpdd.png",
+    "status": "active"
+  },
+  {
+    "name": "Beximco Pharma",
+    "slug": "beximco76",
+    "established": 1976,
+    "country": "Bangladesh",
+    "tagline": "Innovating for life",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742673461/beximco-image_xqseu0.png",
+    "logo": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742672180/beximco_dd1xwr.png",
+    "status": "active"
+  },
+  {
+    "name": "Incepta Pharma.",
+    "slug": "incepta99",
+    "established": 1999,
+    "country": "Bangladesh",
+    "tagline": "Where innovation meets care",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742673460/incepta-image_nylsgn.png",
+    "logo": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742672179/incepta_sibwst.png",
+    "status": "active"
+  },
+  {
+    "name": "Renata Limited",
+    "slug": "renata72",
+    "established": 1972,
+    "country": "Bangladesh",
+    "tagline": "Delivering better health",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742673460/renata-image_x8a1mi.png",
+    "logo": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742672179/renata_d9ssuu.png",
+    "status": "active"
+  },
+  {
+    "name": "ACI Limited",
+    "slug": "aci68",
+    "established": 1968,
+    "country": "Bangladesh",
+    "tagline": "Empowering life with science",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742673460/aci-image_r4rhyr.png",
+    "logo": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742672179/aci_mzzpqe.png",
+    "status": "active"
+  },
+  {
+    "name": "Eskayef Pharma.",
+    "slug": "eskayef90",
+    "established": 1990,
+    "country": "Bangladesh",
+    "tagline": "Passion for better medicine",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742673459/skf-image_n9ap9i.png",
+    "logo": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742672179/skf_zsdy3p.png",
+    "status": "active"
+  },
+  {
+    "name": "Aristopharma Ltd.",
+    "slug": "aristopharma86",
+    "established": 1986,
+    "country": "Bangladesh",
+    "tagline": "Committed to excellence",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742673459/aristopharma-image_wi0zol.png",
+    "logo": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742672180/aristopharma_fl8jim.png",
+    "status": "active"
+  },
+  {
+    "name": "Opsonin Pharma",
+    "slug": "opsonin56",
+    "established": 1956,
+    "country": "Bangladesh",
+    "tagline": "Tradition of healing",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742673460/opsonin-image_sfqn4i.png",
+    "logo": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742672180/opsonin_opbods.png",
+    "status": "active"
+  },
+  {
+    "name": "Drug International",
+    "slug": "drug74",
+    "established": 1974,
+    "country": "Bangladesh",
+    "tagline": "Quality care for all",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742673460/drug-image_vxba93.png",
+    "logo": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742672179/drug_n7o0fm.png",
+    "status": "active"
+  },
+  {
+    "name": "Healthcare Pharma",
+    "slug": "healthcare88",
+    "established": 1988,
+    "country": "Bangladesh",
+    "tagline": "Driven by care, powered by science",
+    "image": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742673460/healthcare-image_bhpz9p.png",
+    "logo": "https://res.cloudinary.com/do6tvtff8/image/upload/v1742672179/healthcare_sdtjir.png",
+    "status": "active"
+  }
+]
