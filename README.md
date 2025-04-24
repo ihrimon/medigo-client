@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Features
 
-## Getting Started
+### Authentication & User Management
+- JWT + NextAuth Authentication (Email/Password & Google Login)
+- Role-Based Access (Admin & Customer)
+- Profile Management (Customer তথ্য আপডেট করতে পারবে)
+- Customers: Can browse, add medicines to the cart, and place orders.
+- Admin: Manages products, orders, and user queries.
 
-First, run the development server:
+### Product & Order Management
+- Medicine Listing & Search (Categories & Filters)
+- Prescription Upload System 
+- Cart & Wishlist (User ওষুধ যোগ করতে পারবে)
+  - Users can add medicines to the cart.
+  - Users can modify the cart (increase quantity, remove items).
+  - Users can place an order and select delivery options.
+  - Prescription Upload: If a medicine requires a prescription, users must upload a valid prescription before checkout.
+  - Secure checkout with payment integration (Stripe, ShurjoPay, etc.).
+  - Order Tracking & Status Updates
+  - Users can search for medicines by name, category, or symptoms.
+  - 
+- Medicines should have a detailed page including:
+  - Name
+  - Description
+  - Price
+  - Stock availability
+  - Required Prescription (Yes/No)
+  - Manufacturer Details
+  - Expiry date
+  
+- Order Management & Tracking:
+  - Users can track their orders (Pending, Processing, Shipped, Delivered).
+  - Admins can manage orders and update their status.
+  - Users receive email notifications on order updates.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Payment & Checkout
+✅ Payment Methods (Stripe, COD - Cash on Delivery)
+✅ Discount & Coupons 
+✅ Invoice & Order Confirmation Email
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Admin Dashboard Features
+- User & Role Management
+- Product Management (Medicine Add, Update, Delete)
+- Manage Medicines: Add, update, or remove medicines.
+- Monitor stock levels and update inventory.
+- Manage Orders: View and process user orders.
+- Verify uploaded prescriptions before approving orders.
+- Manage Users: View customer details and order history.
+- Manage Payments: Track successful transactions.
+- Ensure prescription medicines require verification before purchase.
+- Implement role-based access control (Admin vs. Customer).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Additional Features
+✅ Live Chat Support
+✅ Email & SMS Notifications
+✅ Dark/Light Mode
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+### Home Page (**/**)
+- Navbar with necessary menu items and logo
+- Hero Section
+- Featured Categories
+- Top Selling / Popular Products
+- Exclusive Offers & Discounts
+- How It Works
+- Customer Testimonials
+- Health Blog / Articles
+- Why Choose Us?
+- Call to Action (CTA)
+- Brands
+- Footer with necessary links
 
-To learn more about Next.js, take a look at the following resources:
+### Register Page(/register)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Login Page (**/login**)
+  
+### Shop (**/shop**)
+- Displays all available medicines.
+- Filtering and sorting options (category, price, required prescription, etc.).
+- Infinite scrolling on this page.
+  
+### Medicine Details (**/medicine/:id**)
+- Displays detailed information about the medicine.
+- Add to cart button.
+  
+### Cart Page (**/cart**)
+- Users can view, edit, and proceed to checkout.
+  
+### Checkout Page (**/checkout**)
+- Users enter their shipping details.
+- Users upload a prescription if required.
+- Users select a payment method and confirm the order.
+  
+### Order History (**/orders**)
+- Users can view past orders and track current orders.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Profile Page (**/profile**)
+- Users can update personal details (name, email, phone number, address, etc.).
 
-## Deploy on Vercel
+### Admin Dashboard (**/admin**)
+- Overview of total orders, stock levels, and pending prescriptions.
+  
+### Manage Medicines (**/admin/medicines**)
+- Add, update, and remove medicines from the inventory.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Manage Orders (**/admin/orders**)
+- Approve or reject prescription-based orders.
+- Update order statuses.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Manage Users (**/admin/users**)
+- View customer details and order history.
+
+
+
+
+*** navbar e hover korle circle er moto hobe and color change hobe
+*** home banner e medicine related icon animation thakbe
+*** button e hover korle capsule er moto hobe
+
+
+*** Login and resgister page with responsive
+*** 
