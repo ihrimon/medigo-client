@@ -6,8 +6,8 @@ import HomeBanner from '@/components/modules/home/HomeBanner';
 // import PopularCategories from '@/components/modules/home/PopularCategories';
 import ServiceMarquee from '@/components/modules/home/ServiceMarquee';
 // import Testimonials from '@/components/modules/home/Testimonials';
-import TopCategories from '@/components/modules/home/TopCategories';
-import { TrendingItems } from '@/components/modules/home/TrendingItems';
+// import TopCategories from '@/components/modules/home/TopCategories';
+// import { TrendingItems } from '@/components/modules/home/TrendingItems';
 // import WorkProcess from '@/components/modules/home/WorkProcess';
 
 export default function Home() {
@@ -15,8 +15,8 @@ export default function Home() {
     <div>
       <HomeBanner />
       <ServiceMarquee />
-      <TopCategories />
-      <TrendingItems />
+      {/* <TopCategories />
+      <TrendingItems /> */}
       {/* <PopularCategories />
       <PopularBrands />
       <WorkProcess />
