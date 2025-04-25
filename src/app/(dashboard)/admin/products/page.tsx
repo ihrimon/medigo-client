@@ -12,7 +12,7 @@ const AdminProductPage = async () => {
   const categories = categoriesData?.data;
   const brands = brandsData?.data;
   console.log(brandsData)
-  console.log(products);
+  console.log(productsData);
   return (
     <div className='max-w-7xl mx-auto'>
       <h3 className='text-2xl mb-6'>Products</h3>

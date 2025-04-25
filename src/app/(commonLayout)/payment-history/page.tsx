@@ -64,43 +64,51 @@ const PaymentHistoryPage = () => {
   return (
     <div className='space-y-6 max-w-7xl mx-auto'>
       <div>
-        <h1 className='text-3xl font-bold tracking-tight'>Payment History</h1>
+        <h1 className='text-3xl font-bold tracking-tight text-center'>
+          Payment History
+        </h1>
         <p className='text-muted-foreground'>
           View your payment history and transaction details.
         </p>
       </div>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>Recent Payments</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>Transaction ID</TableHead>
-                <TableHead>Date</TableHead>
-                <TableHead>Amount</TableHead>
-                <TableHead>Status</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {payments.map((payment: IPayment) => (
-                <TableRow key={payment._id}>
-                  <TableCell className='font-medium'>{payment.transactionId}</TableCell>
-                  <TableCell>
-                    {new Date(payment.createdAt).toLocaleDateString()}
-                  </TableCell>
-                  <TableCell>
-                    {payment.currency} {(payment.amount).toFixed(2)}
-                  </TableCell>
-                  <TableCell>{payment.status}</TableCell>
+      {payments.length === 0 ? (
+        <p className='text-center text-red-500'>You dont have payment history</p>
+      ) : (
+        <Card>
+          <CardHeader>
+            <CardTitle>Recent Payments</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <Table>
+              <TableHeader>
+                <TableRow>
+                  <TableHead>Transaction ID</TableHead>
+                  <TableHead>Date</TableHead>
+                  <TableHead>Amount</TableHead>
+                  <TableHead>Status</TableHead>
                 </TableRow>
-              ))}
-            </TableBody>
-          </Table>
-        </CardContent>
-      </Card>
+              </TableHeader>
+              <TableBody>
+                {payments.map((payment: IPayment) => (
+                  <TableRow key={payment._id}>
+                    <TableCell className='font-medium'>
+                      {payment.transactionId}
+                    </TableCell>
+                    <TableCell>
+                      {new Date(payment.createdAt).toLocaleDateString()}
+                    </TableCell>
+                    <TableCell>
+                      {payment.currency} {payment.amount.toFixed(2)}
+                    </TableCell>
+                    <TableCell>{payment.status}</TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </CardContent>
+        </Card>
+      )}
     </div>
   );
 };

@@ -11,7 +11,11 @@ const MyOrdersPage = async () => {
   return (
     <div className='space-y-6 max-w-7xl mx-auto'>
       <h1 className='text-3xl font-bold text-center'>My Orders</h1>
-      <MyOrdersTable orders = {orders} />
+      {orders.length === 0 ? (
+        <p className='text-red-500 my-10 text-center'>You dont have orders, please Order your products</p>
+      ) : (
+        <MyOrdersTable orders={orders} />
+      )}
     </div>
   );
 };

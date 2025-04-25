@@ -80,28 +80,6 @@ export default function RegisterForm() {
             <p className='text-gray-600 mt-1'>Sign Up To Continue To MediGo.</p>
           </div>
 
-          <div className='flex gap-3 mb-6'>
-            <Button variant='outline' className='w-1/2 gap-2'>
-              <Google />
-              Google
-            </Button>
-            <Button variant='outline' className='w-1/2 gap-2'>
-              <Facebook />
-              Facebook
-            </Button>
-          </div>
-
-          <div className='relative mb-6'>
-            <div className='absolute inset-0 flex items-center'>
-              <span className='w-full border-t border-gray-300'></span>
-            </div>
-            <div className='relative flex justify-center text-sm'>
-              <span className='px-2 bg-white text-gray-500'>
-                or continue with email
-              </span>
-            </div>
-          </div>
-
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-4'>
               <FormField

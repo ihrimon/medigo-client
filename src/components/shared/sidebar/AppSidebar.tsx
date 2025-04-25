@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { BookOpen, Bot, Settings2, SquareTerminal } from 'lucide-react';
+import { BookOpen, Bot, Dice5, LayoutDashboard, ListTodo, Logs, Settings2, ShoppingBasket, SquareTerminal, UserPlus } from 'lucide-react';
 import {
   Sidebar,
   SidebarContent,
@@ -20,76 +20,39 @@ const sidebarItems = {
     {
       title: 'Dashboard',
       url: '/admin/dashboard',
-      icon: SquareTerminal,
+      icon: LayoutDashboard,
       isActive: true,
     },
     {
       title: 'Products',
       url: '/admin/products',
-      icon: Bot,
+      icon: ShoppingBasket,
     },
     {
       title: 'Categories',
       url: '/admin/categories',
-      icon: Bot,
+      icon: ListTodo,
     },
     {
       title: 'Brands',
       url: '/admin/brands',
-      icon: Bot,
+      icon: Dice5,
     },
     {
       title: 'Orders',
       url: '/admin/orders',
-      icon: BookOpen,
+      icon: Logs,
     },
     {
       title: 'Customers',
       url: '/admin/customers',
-      icon: BookOpen,
-    },
-    {
-      title: 'Reviews',
-      url: '/admin/reviews',
-      icon: Settings2,
-    },
-  ],
-  customerItems: [
-    {
-      title: 'Dashboard',
-      url: '/customer/dashboard',
-      icon: Bot,
-    },
-    {
-      title: 'My Profile',
-      url: '/customer/my-profile',
-      icon: Bot,
-    },
-    {
-      title: 'Order Products',
-      url: '/customer/order-products',
-      icon: Bot,
-    },
-    {
-      title: 'Payment History',
-      url: '/customer/payment-history',
-      icon: Bot,
-    },
-    {
-      title: 'Settings',
-      url: '/customer/settings',
-      icon: BookOpen,
+      icon: UserPlus,
     },
   ],
 };
 
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   const { user } = useUser();
-
-  const itemsToShow =
-    user?.role === 'admin'
-      ? sidebarItems.adminItems
-      : sidebarItems.customerItems;
 
   return (
     <Sidebar collapsible='icon' {...props}>
@@ -111,7 +74,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
 
       {/* Sidebar Menu */}
       <SidebarContent className='px-2'>
-        <DashboardItems items={itemsToShow} />
+        <DashboardItems items={sidebarItems.adminItems} />
       </SidebarContent>
 
       {/* Footer User Info */}
