@@ -1,25 +1,22 @@
-import {
-  ChevronLeft,
-  ChevronRight,
-} from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { getAllProducts } from '@/services/product';
 import { IProduct } from '@/types';
 import ProductCard from '../../products/ProductCard';
 
 export const TrendingItems = async () => {
-  const {data: productsData} = await getAllProducts();
+  const { data: productsData } = await getAllProducts();
   const products = productsData?.data;
 
   return (
     <section className='py-16 px-4 max-w-7xl mx-auto'>
       <div className='flex items-center justify-between mb-8'>
-        <h2 className='text-2xl font-bold text-slate-800'>
+        <h2 className='text-2xl font-bold text-green-500'>
           Trending Items
-          <div className='h-1 w-12 bg-teal-500 mt-2' />
+          <div className='h-[2px] w-20 bg-green-500 mt-2' />
         </h2>
         <a
           href='#'
-          className='text-teal-500 font-medium hover:text-teal-600 flex items-center gap-1'
+          className='text-blue-500 font-medium hover:text-blue-600 flex items-center gap-1'
         >
           View More
           <ChevronRight className='w-4 h-4' />
@@ -33,7 +30,7 @@ export const TrendingItems = async () => {
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
           {products?.map((product: IProduct) => (
-            <ProductCard key={product._id} product={product}/>
+            <ProductCard key={product._id} product={product} />
           ))}
         </div>
 
@@ -43,4 +40,4 @@ export const TrendingItems = async () => {
       </div>
     </section>
   );
-}
+};

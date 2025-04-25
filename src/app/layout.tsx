@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-import { Lora } from 'next/font/google';
+import { Rubik } from 'next/font/google';
 import './globals.css';
 import Providers from '@/providers/Providers';
 import { Toaster } from 'sonner';
 
-const lora = Lora({
-  variable: '--font-poppins',
+const rubik = Rubik({
+  variable: '--font-rubik',
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${lora.variable} antialiased`}>
+      <body className={`${rubik.variable} antialiased`}>
         <Providers>
           <Toaster richColors position='bottom-center' />
           {children}

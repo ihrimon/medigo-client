@@ -25,8 +25,6 @@ import { useUser } from '@/context/UserContext';
 import { useRouter } from 'next/navigation';
 import { registerUser } from '@/services/auth';
 import { toast } from 'sonner';
-import Google from '@/app/assets/svgs/Google';
-import Facebook from '@/app/assets/svgs/Facebook';
 import Logo from '@/components/shared/Logo';
 
 export default function RegisterForm() {

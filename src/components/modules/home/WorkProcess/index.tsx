@@ -11,7 +11,7 @@ const steps = [
     description:
       'The first step in our process is to welcome our patients and ensure they have a experience.',
     image:
-      'https://images.unsplash.com/photo-1588776814546-b474f3b44f40?auto=format&fit=crop&w=800&q=80',
+      'https://plus.unsplash.com/premium_photo-1675807264652-5129fad6ef51?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     color: 'text-green-600 border-green-500',
   },
   {
@@ -20,7 +20,7 @@ const steps = [
     description:
       'Once the patient is checked in, healthcare professional conduct a thorough evaluation.',
     image:
-      'https://images.unsplash.com/photo-1606220838311-46c8063efb7b?auto=format&fit=crop&w=800&q=80',
+      'https://plus.unsplash.com/premium_photo-1661775601929-8c775187bea6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     color: 'text-blue-600 border-blue-500',
   },
   {
@@ -29,7 +29,7 @@ const steps = [
     description:
       'Analyzing the result of diagnostic tests & incorporating them into the diagnosis.',
     image:
-      'https://images.unsplash.com/photo-1588776814546-b474f3b44f40?auto=format&fit=crop&w=800&q=80',
+      'https://plus.unsplash.com/premium_photo-1723629650989-e9c3c4760b1e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     color: 'text-green-600 border-green-500',
   },
   {
@@ -38,7 +38,7 @@ const steps = [
     description:
       'Our commitment to our patient extend beyond the initial visit. we ensure continuity of care.',
     image:
-      'https://images.unsplash.com/photo-1584467735871-6eec52163f42?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1576671081741-c538eafccfff?q=80&w=2032&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     color: 'text-blue-600 border-blue-500',
   },
 ];
@@ -86,7 +86,7 @@ const WorkProcess = () => {
 
             {/* Arrow */}
             {index < steps.length - 1 && (
-              <div className='hidden md:block absolute top-20 -right-20'>
+              <div className='hidden md:block absolute top-20 -right-10'>
                 <ArrowRight size={32} className='text-gray-300' />
               </div>
             )}

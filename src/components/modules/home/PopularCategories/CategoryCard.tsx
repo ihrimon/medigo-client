@@ -9,9 +9,17 @@ import { Eye } from 'lucide-react';
 import QuickView from './QuickView';
 import { IProduct } from '@/types';
 import Image from 'next/image';
+// import { useAppDispatch } from '@/redux/hooks';
+// import { addProduct } from '@/services/product';
+// import { toast } from 'sonner';
 
 const CategoryCard = ({ product }: {product: IProduct}) => {
   const [quickViewOpen, setQuickViewOpen] = useState(false);
+  // const dispatch = useAppDispatch();
+  // const handleAddProduct = (product: IProduct) => {
+  //   dispatch(addProduct(product));
+  //   toast.success(`${product.name} is added to cart.`);
+  // };
 
   return (
     <>
@@ -27,10 +35,10 @@ const CategoryCard = ({ product }: {product: IProduct}) => {
                 className='object-contain w-full h-full p-6'
               />
             </AspectRatio>
-              <Badge className='absolute top-2 left-2 bg-black text-white font-medium'>
-                Sale!
-              </Badge>
-            
+            <Badge className='absolute top-2 left-2 bg-black text-white font-medium'>
+              Sale!
+            </Badge>
+
             {/* Quick View Button */}
             <div className='absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity'>
               <Button
@@ -66,6 +74,15 @@ const CategoryCard = ({ product }: {product: IProduct}) => {
                 </span>
               )}
             </div>
+            {/* <Button
+              onClick={() => handleAddProduct(product)}
+              disabled={product?.stock === 0}
+              variant='outline'
+              size='sm'
+              className='flex justify-center text-center'
+            >
+              Add To Cart <ShoppingCart />
+            </Button> */}
           </div>
         </CardContent>
       </Card>

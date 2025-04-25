@@ -18,7 +18,9 @@
     "strength": ["250mg", "500mg"],
     "prescriptionRequired": true,
     "expiryDate": "19-08-2026",
-    "isActive": true
+    "isActive": true,
+    "averageReview": 4.5,
+    "totalReviews": 150
   },
   {
     "name": "Ciprocin Tablet",
@@ -39,7 +41,9 @@
     "strength": ["250mg", "500mg"],
     "prescriptionRequired": true,
     "expiryDate": "19-08-2028",
-    "isActive": true
+    "isActive": true,
+    "averageReview": 4.2,
+    "totalReviews": 245
   },
   {
     "name": "Suprax Tablet",
@@ -60,7 +64,9 @@
     "strength": ["125mg/5ml", "500mg/5ml"],
     "prescriptionRequired": true,
     "expiryDate": "19-08-2027",
-    "isActive": true
+    "isActive": true,
+    "averageReview": 4.3,
+    "totalReviews": 310
   },
   {
     "name": "Renamox Syrup",
@@ -81,9 +87,10 @@
     "strength": ["125mg/5ml", "500mg/5ml"],
     "prescriptionRequired": true,
     "expiryDate": "19-08-2026",
-    "isActive": true
+    "isActive": true,
+    "averageReview": 4.6,
+    "totalReviews": 180
   },
-
   {
     "name": "Azipro Capsule",
     "slug": "azipro-capsule",
@@ -103,6 +110,8 @@
     "strength": ["250mg", "500mg"],
     "prescriptionRequired": true,
     "expiryDate": "19-08-2028",
-    "isActive": true
+    "isActive": true,
+    "averageReview": 4.4,
+    "totalReviews": 200
   }
 ]

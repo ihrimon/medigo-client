@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
@@ -8,40 +8,63 @@ import TestimonialCard from './TestimonialCard';
 
 const testimonials = [
   {
-    id: 1,
-    name: 'Patrick M. Newman',
-    date: 'May 27, 2024',
-    text: 'Real authentic genuine quality however it fit me like an XL size when In fact Im L. Beware',
-    rating: 5,
-    productName: 'Aerodynamic Copper Lamp',
-    productImage: '/lovable-uploads/4ad09c09-7e4d-43f9-9989-b1c9ad656018.png',
-  },
-  {
     id: 2,
-    name: 'Philip King',
-    date: 'May 27, 2024',
-    text: 'Idque dolorum mandamus mei te. An nibh putant suavitate est, sea regione fabulas deterruisset cu.',
+    name: 'Rakib Hossain',
+    date: 'April 15, 2025',
+    text: 'Excellent service. I receive my medicine on time and even got phone consultation from a certified pharmacist.',
     rating: 5,
-    productName: 'Aerodynamic Copper Lamp',
-    productImage: '/lovable-uploads/4ad09c09-7e4d-43f9-9989-b1c9ad656018.png',
+    productName: 'Napa Extra',
+    productImage:
+      'https://plus.unsplash.com/premium_photo-1668487826871-2f2cac23ad56?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     id: 3,
-    name: 'Patrick M. Newman',
-    date: 'May 27, 2024',
-    text: 'Real authentic genuine quality however it fit me like an XL size when In fact Im L. Beware',
-    rating: 5,
-    productName: 'Aerodynamic Copper Lamp',
-    productImage: '/lovable-uploads/4ad09c09-7e4d-43f9-9989-b1c9ad656018.png',
+    name: 'Jannatul Ferdous',
+    date: 'April 12, 2025',
+    text: 'As a working mom, MediGo saves me time and stress. I can refill my baby’s vitamins without rushing to the pharmacy.',
+    rating: 4,
+    productName: 'PediaSure Powder',
+    productImage:
+      'https://images.unsplash.com/photo-1638405803126-d12de49c7d47?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     id: 4,
-    name: 'Patrick M. Newman',
-    date: 'May 27, 2024',
-    text: 'Real authentic genuine quality however it fit me like an XL size when In fact Im L. Beware',
+    name: 'Tariqul Islam',
+    date: 'April 18, 2025',
+    text: 'They always verify prescriptions before shipping the medicine. Very trustworthy and professional service!',
     rating: 5,
-    productName: 'Aerodynamic Copper Lamp',
-    productImage: '/lovable-uploads/4ad09c09-7e4d-43f9-9989-b1c9ad656018.png',
+    productName: 'Insulin Pen – Novorapid',
+    productImage:
+      'https://plus.unsplash.com/premium_photo-1661780250041-86c3331cef25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    id: 5,
+    name: 'Sumaiya Khan',
+    date: 'April 20, 2025',
+    text: 'MediGo is a lifesaver for my elderly parents. I can schedule their medicine delivery even though I live in another city.',
+    rating: 5,
+    productName: 'Amlodipine 5mg',
+    productImage:
+      'https://images.unsplash.com/photo-1616526628217-c21fd2eef624?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    id: 6,
+    name: 'Faisal Mahmud',
+    date: 'April 22, 2025',
+    text: 'Easy ordering, responsive customer support, and affordable pricing. Highly recommended!',
+    rating: 5,
+    productName: 'Paracetamol 500mg',
+    productImage:
+      'https://images.unsplash.com/photo-1703581095777-28bb26229b55?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  },
+  {
+    id: 1,
+    name: 'Dr. Sarah Ahmed',
+    date: 'April 10, 2025',
+    text: 'MediGo has made it incredibly easy to order my monthly prescriptions. The delivery is always on time and the packaging is hygienic.',
+    rating: 5,
+    productName: 'Atorvastatin 20mg',
+    productImage: '/uploads/products/atorvastatin.png',
   },
 ];
 
@@ -59,9 +82,10 @@ const Testimonials = () => {
   };
 
   return (
-    <div className='w-full max-w-7xl mx-auto px-4 py-16 bg-[#F1F0FB]'>
+    <div className='w-full max-w-7xl mx-auto px-4 py-16'>
       <div className='flex justify-between items-center mb-12'>
-        <h2 className='text-3xl font-bold'>Happy Clients Say</h2>
+        <h2 className='text-3xl font-bold text-green-600'>Happy Clients Say</h2>{' '}
+        {/* Green color for heading */}
         <div className='flex gap-2'>
           <Button
             variant='outline'
@@ -69,7 +93,7 @@ const Testimonials = () => {
             onClick={handlePrevious}
             disabled={currentIndex === 0}
             className={cn(
-              'bg-white',
+              'bg-blue-500 text-white hover:bg-blue-600',
               currentIndex === 0 && 'opacity-50 cursor-not-allowed'
             )}
           >
@@ -81,7 +105,7 @@ const Testimonials = () => {
             onClick={handleNext}
             disabled={currentIndex >= maxIndex}
             className={cn(
-              'bg-white',
+              'bg-blue-500 text-white hover:bg-blue-600',
               currentIndex >= maxIndex && 'opacity-50 cursor-not-allowed'
             )}
           >

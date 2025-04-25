@@ -8,7 +8,7 @@ const PopularBrands = async () => {
   const brands = brandsData?.data;
 
   return (
-    <div className='max-w-7xl mx-auto'>
+    <div className='max-w-7xl mx-auto mt-20'>
       <div className='flex items-center justify-between'>
         <h2 className='text-3xl font-bold'>Top Brands</h2>
         <div className='border px-1 flex items-center py-1 rounded-full border-green-500 gap-1 text-white'>

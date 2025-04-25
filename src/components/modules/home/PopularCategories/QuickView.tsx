@@ -11,8 +11,8 @@ import { Heart, ShoppingCart, Lock } from 'lucide-react';
 
 interface QuickViewProps {
   product: IProduct;
-  open: boolean;
-  onOpenChange: (open: boolean) => void;
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
 }
 
 const QuickView: React.FC<QuickViewProps> = ({

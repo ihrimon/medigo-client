@@ -11,7 +11,7 @@ import {
 import { addProduct } from '@/redux/features/cartSlice';
 import { useAppDispatch } from '@/redux/hooks';
 import { IProduct } from '@/types';
-import { Heart, ShoppingCart, Star } from 'lucide-react';
+import { ShoppingCart, Star } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { toast } from 'sonner';
@@ -28,9 +28,7 @@ const ProductCard = ({ product }: { product: IProduct }) => {
       <CardHeader className='relative p-0 h-48'>
         <Image
           src={
-            product?.images[0] ||
-            'https://psediting.websites.co.in/obaju-turquoise/img/product-placeholder.png'
-          }
+            product?.images[0] }
           width={500}
           height={500}
           alt='product image'
@@ -74,11 +72,11 @@ const ProductCard = ({ product }: { product: IProduct }) => {
           </p>
 
           <div className='flex items-center justify-center gap-1'>
-            <Star className='w-4 h-4' fill='orange' stroke='orange' />
-            <Star className='w-4 h-4' fill='orange' stroke='orange' />
-            <Star className='w-4 h-4' fill='orange' stroke='orange' />
-            <Star className='w-4 h-4' fill='orange' stroke='orange' />
-            <Star className='w-4 h-4' fill='orange' stroke='orange' />
+            <Star className='w-3 h-3' fill='orange' stroke='orange' />
+            <Star className='w-3 h-3' fill='orange' stroke='orange' />
+            <Star className='w-3 h-3' fill='orange' stroke='orange' />
+            <Star className='w-3 h-3' fill='orange' stroke='orange' />
+            <Star className='w-3 h-3' fill='orange' stroke='orange' />
             <span className='text-sm font-medium text-gray-700'>
               ({product?.averageReview})
             </span>
@@ -89,28 +87,13 @@ const ProductCard = ({ product }: { product: IProduct }) => {
       <CardFooter className='block p-0'>
         <div className='flex gap-2 items-center justify-between'>
           <Button
-            disabled={product?.stock === 0}
-            size='sm'
-            variant='outline'
-            className='w-32'
-          >
-            Buy Now
-          </Button>
-          <Button
             onClick={() => handleAddProduct(product)}
             disabled={product?.stock === 0}
             variant='outline'
             size='sm'
-            className='w-8 h-8 p-0 flex items-center justify-center rounded-full'
+            className='flex justify-center text-center text-green-500'
           >
-            <ShoppingCart />
-          </Button>
-          <Button
-            variant='outline'
-            size='sm'
-            className='w-8 h-8 p-0 flex items-center justify-center rounded-full'
-          >
-            <Heart />
+           Add To Cart <ShoppingCart />
           </Button>
         </div>
       </CardFooter>

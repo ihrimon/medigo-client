@@ -17,8 +17,6 @@ import {
   FormMessage,
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
-import Google from '@/app/assets/svgs/Google';
-import Facebook from '@/app/assets/svgs/Facebook';
 import authImage from '../../../../app/assets/auth.png';
 import Image from 'next/image';
 import { loginSchema } from '@/schemas';

@@ -1,6 +1,6 @@
 import HomeBanner from '@/components/modules/home/HomeBanner';
 import HomeGallery from '@/components/modules/home/HomeGallery';
-import { HotSale } from '@/components/modules/home/HotSale';
+// import { HotSale } from '@/components/modules/home/HotSale';
 import LatestBlog from '@/components/modules/home/LatestBlog';
 import PopularBrands from '@/components/modules/home/PopularBrands';
 import PopularCategories from '@/components/modules/home/PopularCategories';
@@ -17,7 +17,7 @@ export default function Home() {
       <ServiceMarquee />
       <TopCategories />
       <TrendingItems />
-      <HotSale />
+      {/* <HotSale /> */}
       <PopularCategories />
       <PopularBrands />
       <WorkProcess />

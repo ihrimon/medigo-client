@@ -1,6 +1,6 @@
 'use client';
 
-import { Heart, ShoppingCart, WandSparkles } from 'lucide-react';
+import { ShoppingCart, WandSparkles } from 'lucide-react';
 import { Button } from '../ui/button';
 import Link from 'next/link';
 import { navLinks } from '@/constants/navbar';

@@ -53,7 +53,6 @@ const blogPost = {
 };
 
 const BlogDetailsPage = () => {
-
   // In a real app, we would fetch the blog post based on the ID
   // For now, we'll just use our sample data
 
@@ -102,7 +101,9 @@ const BlogDetailsPage = () => {
 
         {/* Hero image */}
         <div className='mb-8 rounded-xl overflow-hidden'>
-          <img
+          <Image
+            width={500}
+            height={500}
             src={blogPost.heroImage}
             alt={blogPost.title}
             className='w-full h-auto object-cover'
@@ -131,29 +132,31 @@ const BlogDetailsPage = () => {
               );
             }
 
-            if (section.type === 'images') {
-              return (
-                <div key={index} className='grid grid-cols-3 gap-4 my-8'>
-                  {section.images.map((image, imgIndex) => (
-                    <div key={imgIndex} className='rounded-lg overflow-hidden'>
-                      <img
-                        src={image}
-                        alt={`Blog image ${imgIndex + 1}`}
-                        className='w-full h-48 object-cover'
-                      />
-                    </div>
-                  ))}
-                </div>
-              );
-            }
+            // if (section.type === 'images') {
+            //   return (
+            //     <div key={index} className='grid grid-cols-3 gap-4 my-8'>
+            //       {section && section.images.map((image, imgIndex) => (
+            //         <div key={imgIndex} className='rounded-lg overflow-hidden'>
+            //           <Image
+            //             src={image}
+            //             width={500}
+            //             height={500}
+            //             alt={`Blog image ${imgIndex + 1}`}
+            //             className='w-full h-48 object-cover'
+            //           />
+            //         </div>
+            //       ))}
+            //     </div>
+            //   );
+            // }
 
             if (section.type === 'image') {
               return (
                 <div key={index} className='my-8 rounded-lg overflow-hidden'>
                   <Image
-                  width={500}
-                  height={500}
-                    src={section.image}
+                    width={500}
+                    height={500}
+                    src={section.image as string}
                     alt={`Blog image`}
                     className='w-full h-auto object-cover'
                   />

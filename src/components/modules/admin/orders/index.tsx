@@ -1,26 +1,25 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Table,
   TableHeader,
-  TableBody,
   TableHead,
   TableRow,
-  TableCell,
 } from '@/components/ui/table';
 import { CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import Image from 'next/image';
-import AddProductModal from './AddProductModal';
-import { IBrand, ICategory, IOrder, IProduct } from '@/types';
-import { Edit, Eye, Trash } from 'lucide-react';
-import QuickView from '@/components/modules/home/PopularCategories/QuickView';
-import EditProductModal from '@/components/ui/core/CustomModal/EditProductModal';
-import { deleteProduct } from '@/services/product';
-import DeleteConfirmationModal from '@/components/ui/core/CustomModal/DeleteConfirmationModal';
-import { toast } from 'sonner';
-import { deleteOrder } from '@/services/order';
-import { CartProduct } from '@/redux/features/cartSlice';
+import { IOrder } from '@/types';
+// import Image from 'next/image';
+// import AddProductModal from './AddProductModal';
+// import { IBrand, ICategory, IOrder, IProduct } from '@/types';
+// import { Edit, Eye, Trash } from 'lucide-react';
+// import QuickView from '@/components/modules/home/PopularCategories/QuickView';
+// import EditProductModal from '@/components/ui/core/CustomModal/EditProductModal';
+// import { deleteProduct } from '@/services/product';
+// import DeleteConfirmationModal from '@/components/ui/core/CustomModal/DeleteConfirmationModal';
+// import { toast } from 'sonner';
+// import { deleteOrder } from '@/services/order';
+// import { CartProduct } from '@/redux/features/cartSlice';
 
 const OrderList = ({orders}: {orders: IOrder}) => {
   // const [quickViewOpen, setQuickViewOpen] = useState(false);
@@ -85,7 +84,7 @@ const OrderList = ({orders}: {orders: IOrder}) => {
                 <TableHead>Status</TableHead>
               </TableRow>
             </TableHeader>
-            <TableBody>
+            {/* <TableBody>
               {orders.map((order: IOrder) => (
                 <TableRow key={order._id} className='hover:bg-gray-50'>
                   <TableCell>#{order._id.slice(-5)}</TableCell>
@@ -101,7 +100,7 @@ const OrderList = ({orders}: {orders: IOrder}) => {
                   <TableCell>{order.status}</TableCell>
                 </TableRow>
               ))}
-            </TableBody>
+            </TableBody> */}
           </Table>
         </div>
       </CardContent>

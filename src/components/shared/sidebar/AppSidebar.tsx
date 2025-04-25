@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { BookOpen, Bot, Dice5, LayoutDashboard, ListTodo, Logs, Settings2, ShoppingBasket, SquareTerminal, UserPlus } from 'lucide-react';
+import { Dice5, LayoutDashboard, ListTodo, Logs, ShoppingBasket, UserPlus } from 'lucide-react';
 import {
   Sidebar,
   SidebarContent,

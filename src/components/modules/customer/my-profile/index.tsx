@@ -13,12 +13,10 @@ import {
 import { Textarea } from '@/components/ui/textarea';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { FieldValues, SubmitHandler, useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { customerSchema } from '@/schemas/customer';
 import { Upload } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 import { useCustomer } from '@/context/UserContext';
-import { updateCustomer } from '@/services/customer';
+// import { updateCustomer } from '@/services/customer';
 
 const MyProfile = () => {
   const { customer } = useCustomer();
@@ -70,8 +68,8 @@ const MyProfile = () => {
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     console.log('submitted data', data);
-    const res = await updateCustomer(customer?._id, data); 
-    console.log(res);
+    // const res = await updateCustomer(customer?._id, data); 
+    // console.log(res);
   };
 
   return (

@@ -37,7 +37,7 @@ export const getAllCategories = async () => {
         },
       }
     );
-
+    
     return res.json();
   } catch (error: any) {
     return Error(error);

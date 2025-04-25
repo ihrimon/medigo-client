@@ -8,13 +8,12 @@ import {
   clearCart,
   grandTotalSelector,
   orderedProductsSelector,
-  orderSelector,
   shippingCostSelector,
   subTotalSelector,
   updateShippingAddress,
 } from '@/redux/features/cartSlice';
 import { useAppDispatch, useAppSelector } from '@/redux/hooks';
-import { createCheckoutSession, createOrder } from '@/services/cart';
+import { createCheckoutSession } from '@/services/cart';
 import { loadStripe } from '@stripe/stripe-js';
 import { useRouter } from 'next/navigation';
 import { toast } from 'sonner';
@@ -34,7 +33,7 @@ export default function PaymentDetails() {
   const subTotal = useAppSelector(subTotalSelector);
   const shippingCost = useAppSelector(shippingCostSelector);
   const grandTotal = useAppSelector(grandTotalSelector);
-  const order = useAppSelector(orderSelector);
+  // const order = useAppSelector(orderSelector);
   const cartProducts = useAppSelector(orderedProductsSelector);
 
   console.log(shippingFormData)
@@ -62,20 +61,20 @@ export default function PaymentDetails() {
       }
 
       // order create
-      const orderResponse = await createOrder(order);
+      // const orderResponse = await createOrder(order);
 
-      if (!orderResponse.success) {
-        throw new Error(orderResponse.message);
-      }
+      // if (!orderResponse.success) {
+      //   throw new Error(orderResponse.message);
+      // }
 
-      const createdOrder = orderResponse.data;
-      console.log(createdOrder, 'create order')
-      toast.success(orderResponse.message);
+      // const createdOrder = orderResponse.data;
+      // console.log(createdOrder, 'create order')
+      // toast.success(orderResponse.message);
 
       // create payment data
       const paymentData = {
         user: user?.user?.userId,
-        order: createdOrder._id,
+        order: user?.user?.userId,
         amount: grandTotal,
         currency: 'BDT',
         status: 'pending',

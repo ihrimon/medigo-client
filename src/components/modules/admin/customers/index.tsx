@@ -9,7 +9,6 @@ import {
   TableCell,
 } from '@/components/ui/table';
 import { CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import Image from 'next/image';
 import { ICustomer } from '@/types';
 
 const CustomerList = ({customers}: {customers: ICustomer[]}) => {
@@ -78,7 +77,7 @@ const CustomerList = ({customers}: {customers: ICustomer[]}) => {
               {customers.map((customer: ICustomer) => (
                 <TableRow key={customer._id} className='hover:bg-gray-50'>
                   <TableCell>#{customer._id.slice(-5)}</TableCell>
-                  <TableCell className='py-4'>
+                  {/* <TableCell className='py-4'>
                     <div className='flex items-center gap-3'>
                       <div className='flex items-center justify-center h-12 w-12 p-2 rounded-full bg-green-50'>
                         <Image
@@ -91,7 +90,7 @@ const CustomerList = ({customers}: {customers: ICustomer[]}) => {
                       </div>
                       
                     </div>
-                  </TableCell>
+                  </TableCell> */}
                 </TableRow>
               ))}
             </TableBody>

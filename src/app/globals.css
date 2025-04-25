@@ -134,3 +134,8 @@
     clip-path: polygon(100% 0, 100% 100%, 0 50%);
   }
 }
+
+
+body {
+  font-family: var(--font-rubik), sans-serif;
+}
