@@ -6,9 +6,10 @@ import { usePathname } from 'next/navigation';
 
 const CommonLayout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
+
   return (
     <>
-      {pathname !== '/' && <Navbar />}
+      {pathname && pathname !== '/' && <Navbar />}
       <main className='min-h-screen'>{children}</main>
       <Footer />
     </>
