@@ -10,7 +10,7 @@
 ### Product & Order Management
 - Medicine Listing & Search (Categories & Filters)
 - Prescription Upload System 
-- Cart & Wishlist (User ওষুধ যোগ করতে পারবে)
+- Cart & Wishlist 
   - Users can add medicines to the cart.
   - Users can modify the cart (increase quantity, remove items).
   - Users can place an order and select delivery options.

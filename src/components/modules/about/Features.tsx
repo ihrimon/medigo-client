@@ -2,6 +2,7 @@
 
 import { Check } from 'lucide-react';
 import { Card } from '@/components/ui/card';
+import Image from 'next/image';
 
 const skills = [
   'Radiant Skin Dermatology',
@@ -43,7 +44,9 @@ export function Features() {
                 Experienced
               </span>
             </div>
-            <img
+            <Image
+            width={500}
+            height={500}
               src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop'
               alt='Dr. Natali Jackson'
               className='rounded-2xl shadow-xl w-full h-[600px] object-cover'
