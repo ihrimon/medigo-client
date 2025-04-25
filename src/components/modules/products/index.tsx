@@ -1,5 +1,5 @@
 import { IProduct } from '@/types';
-import FilterSidebar from './FilterSidebar';
+// import FilterSidebar from './FilterSidebar';
 import ProductCard from './ProductCard';
 
 const AllProducts = async ({ products }: { products: IProduct[] }) => {
@@ -7,7 +7,7 @@ const AllProducts = async ({ products }: { products: IProduct[] }) => {
   return (
     <div className='flex gap-8 my-10'>
       <div className='lg:w-[500px] border'>
-        <FilterSidebar />
+        {/* <FilterSidebar /> */}
       </div>
       <div>
         <div className='grid grid-cols-3 gap-8'>

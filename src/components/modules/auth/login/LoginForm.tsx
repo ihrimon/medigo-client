@@ -22,7 +22,7 @@ import Image from 'next/image';
 import { loginSchema } from '@/schemas';
 import { loginDefaultValues } from '@/constants';
 import { loginUser } from '@/services/auth';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { useUser } from '@/context/UserContext';
 import { toast } from 'sonner';
 import Logo from '@/components/shared/Logo';
@@ -36,8 +36,8 @@ export default function LoginForm() {
   });
   const { setIsLoading } = useUser();
 
-    const searchParams = useSearchParams();
-    const redirect = searchParams.get('redirectPath');
+    // const searchParams = useSearchParams();
+    // const redirect = searchParams.get('redirectPath');
     const router = useRouter();
 
 const {
@@ -51,11 +51,11 @@ const {
       const res = await loginUser(data);
       if (res?.success) {
         toast.success(res?.message);
-        if (redirect) {
-          router.push(redirect);
-        } else {
-          router.push('/');
-        }
+        router.push('/');
+        // if (redirect) {
+        //   router.push(redirect);
+        // } else {
+        // }
       } else {
         toast.error(res?.message);
       }

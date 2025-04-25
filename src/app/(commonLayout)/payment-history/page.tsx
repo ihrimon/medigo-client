@@ -114,3 +114,13 @@
 // };
 
 // export default PaymentHistoryPage;
+
+
+
+const PaymentHistoryPage = () => {
+  return (
+    <div>PaymentHistoryPage</div>
+  )
+}
+
+export default PaymentHistoryPage
